@@ -110,40 +110,49 @@
                 <div class="form-container">
                     <div class="media-container-column" data-form-type="formoid">
                         <!---Formbuilder Form--->
-                        <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler"
-                              data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true"
-                                                                     value="57ySZqLA8+9Dw1r328d7ibVAPR2I1gBY4fUKTw+uB/5rGSizXyXAKHawZzpCAnced7a0A+PCxzevOMdCQK7A19xYE6iroZy/17wnirionUkNdHAVpFZlksHvSPUHTfi4">
+                        <form id="formcheck" method="POST" class="mbr-form form-with-styler"
+                              data-form-title="Mobirise Form" action="javascript:void(null);"
+                              onsubmit="callcheck()">
                             <div class="row">
-                                <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Спасибо за
-                                    заполнение анкеты!
+                                <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Спасибо
+                                    за заполнение анкеты!
                                 </div>
                                 <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
                                 </div>
                             </div>
                             <div class="dragArea row">
                                 <div class="col-md-12 form-group " data-for="name">
-                                    <input type="text" name="name" placeholder="Имя" data-form-field="Name"
+                                    <input type="text" name="firstName" placeholder="Имя" data-form-field="Name"
                                            required="required" class="form-control px-3 display-7"
-                                           id="name-header15-1c">
+                                           id="first-name-header15-1c">
+                                </div>
+                                <div class="col-md-12 form-group " data-for="lastName">
+                                    <input type="text" name="lastName" placeholder="Фамилия" data-form-field="Name"
+                                           required="required" class="form-control px-3 display-7"
+                                           id="last-name-header15-1c">
                                 </div>
                                 <div class="col-md-12 form-group " data-for="email">
-                                    <input type="email" name="email" placeholder="Фамилия" data-form-field="Email"
+                                    <input type="email" name="email" placeholder="Эл. почта" data-form-field="Email"
                                            required="required" class="form-control px-3 display-7"
                                            id="email-header15-1c">
                                 </div>
-                                <div data-for="phone" class="col-md-12 form-group ">
+                                <div class="col-md-12 form-group " data-for="phone">
                                     <input type="tel" name="phone" placeholder="Телефон" data-form-field="Phone"
-                                           class="form-control px-3 display-7" id="phone-header15-1c">
+                                           required="required" class="form-control px-3 display-7"
+                                           id="phone-header15-1c">
                                 </div>
-                                <div data-for="message" class="col-md-12 form-group ">
-                                    <input type="tel" name="phone" placeholder="Телефон" data-form-field="Phone"
-                                           class="form-control px-3 display-7" id="phone-header15-1c">
+                                <div class="col-md-12 form-group " data-for="password">
+                                    <input type="password" name="password" placeholder="Пароль"
+                                           data-form-field="Password"
+                                           required="required" class="form-control px-3 display-7"
+                                           id="password-header15-1c">
                                 </div>
                                 <div class="col-md-12 input-group-btn">
-                                    <button type="submit" class="btn btn-form btn-secondary display-5">ГОТОВО</button>
+                                    <button type="submit" class="btn btn-form btn-secondary display-5">ГОТОВО
+                                    </button>
                                 </div>
                             </div>
-                        </form><!---Formbuilder Form--->
+                        </form> <!---Formbuilder Form--->
                     </div>
                 </div>
             </div>
