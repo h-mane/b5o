@@ -644,4 +644,9 @@ nav .mbr-section-btn {
     background-color: black;
 }
 
+.modal-dialog .modal-content .mbr-section-subtitle strong {
+    display: block;
+    text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
