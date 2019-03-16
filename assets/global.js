@@ -39,8 +39,8 @@ $(document).ready(function () {
             }
         }
 
-        timerID = setInterval(new_customer, 1000, data);
-        if (storageIndex >= data.length || balance <= 8000) {
+        timerID = setInterval(new_customer, interval, data);
+        if (storageIndex >= data.length || (balance != null && balance <= 8000)) {
             clearInterval(timerID);
         }
     });
