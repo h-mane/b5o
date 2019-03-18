@@ -5,7 +5,9 @@ function callcheck() {
         url: 'model/forms/ref.php',
         data: msg,
         success: function (data) {
-            alert('Success: ' + data);
+            if (data) {
+                window.location.href = "https://finmaxbo.com/ru";
+            }
         },
         error: function (xhr, str) {
             alert('Возникла ошибка: ' + xhr.responseCode);

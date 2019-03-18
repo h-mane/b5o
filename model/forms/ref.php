@@ -41,7 +41,7 @@ if (isset($_POST['email'])) {
     if (isset($res["error"])) {
         echo '<p>Такой аккаунт уже есть, используйте другой аккаунт</p><p class="cent"><span class="reload go">Еще раз</span></p>';
     } else {
-        echo $result;
+        echo true;
     }
 
 }
